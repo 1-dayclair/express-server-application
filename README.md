@@ -7,5 +7,3 @@ Use a template engine to render views with Express.
 Interact with a self-made API through HTML forms.
 
 ***Check routes >> users.js for HTTP Methods concerning assignment***
-
-***PLESAE DONT GRADE YET*** I will update momentarily...
