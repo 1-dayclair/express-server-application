@@ -8,10 +8,6 @@ router
         res.json(opinions)
     })
     .post ((req, res) => {
-        const newOpinions = {
-            id: opinions.length + 1,
-        
-        }
 
     })
     .put ((req, res) => {

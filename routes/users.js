@@ -21,12 +21,20 @@ router
 router 
     .route("/:id")
     .put((req, res) => {
-        const update = req.params.id
+        const update = req.params.id;
+        
         
     })
-    .delete((req, res, next) => {
-
-    })
+    .delete((req, res, next) => { 
+        const user = users.find((p, i) => {
+            if (p.id == req.params.id) {
+                users.splice(i, 1);
+                return true;
+            }
+        })
+        if (user) res.json(user);
+        else next();
+    });
 
 
 module.exports = router 
