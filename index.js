@@ -3,6 +3,7 @@ const app = express();
 
 
 app.set("view engine", "ejs");
+app.use("/public", express.static("public"))
 
 const bodyParser = require("body-parser");
 
@@ -25,7 +26,8 @@ app.use(status);
 
 // Home page route
 app.get("/", (req, res) => {
-    res.send("Circular!")
+    console.log("Circular!")
+    res.render("index", {text: "CIRCULAR!"});
 });
 
 // Custom Middleware
@@ -52,6 +54,11 @@ app.get("/public", authentication, (req, res) => {
 });
 
 app.use(authentication);
+
+// 404 Middleware
+app.use((req, res, next) => {
+    next(error(404, "Resource Not Found"));
+  });
 
 
 // Error Handling Middleware
