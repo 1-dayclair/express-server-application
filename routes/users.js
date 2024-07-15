@@ -19,10 +19,28 @@ router
         res.send(newUser);
     })
 router 
+    .route("/person")
+    .get((req, res) => {
+        console.log(req.query);
+        return res.json({
+            message: "This user is an actual person on Circular!", 
+            name: req.query.name,
+            age: req.query.age,    
+        })
+    })
+router 
     .route("/:id")
     .put((req, res) => {
-        const update = req.params.id;
-        
+        const update = users.find((p, i) => {
+            if (p.id == req.params.id) {
+                posts[i][key] = req.body[key]; 
+                return true;
+            }
+
+        })
+        if (update) { res.json({ message: "A new user has been updated!", user});
+        } else { next();
+        }
         
     })
     .delete((req, res, next) => { 
@@ -32,8 +50,9 @@ router
                 return true;
             }
         })
-        if (user) res.json(user);
-        else next();
+        if (user) { res.json({ message: "User has been deleted successfully!", user});
+        } else { next();
+        }
     });
 
 
