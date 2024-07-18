@@ -1,0 +1,15 @@
+body {
+    background-color: yellow;
+}
+
+#top {
+    text-align: center;
+}
+
+.cross {
+    display: flex;
+    justify-content: flex-end;
+    border: dashed darkblue 7px;
+
+}
+
