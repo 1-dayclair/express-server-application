@@ -6,15 +6,17 @@ router
     .route("/")
     .get ((req, res) => {
         res.json(opinions)
-    })
-    .post ((req, res) => {
+    });
 
-    })
+router
+    .route("/soapbox/")
     .put ((req, res) => {
-
-    })
-    .delete ((req, res) => {
-        
-    })
+        console.log(req.body)
+        return res.json({
+            id: req.body.id,
+            content: req.body.content,
+            message: "Updated!"
+        });
+    });
 
 module.exports = router 

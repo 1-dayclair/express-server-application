@@ -31,17 +31,7 @@ router
 router 
     .route("/:id")
     .put((req, res) => {
-        const update = users.find((p, i) => {
-            if (p.id == req.params.id) {
-                posts[i][key] = req.body[key]; 
-                return true;
-            }
-
-        })
-        if (update) { res.json({ message: "A new user has been updated!", user});
-        } else { next();
-        }
-        
+    
     })
     .delete((req, res, next) => { 
         const user = users.find((p, i) => {

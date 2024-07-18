@@ -7,14 +7,5 @@ router
     .get ((req, res) => {
         res.json(location)
     })
-    .post ((req, res) => {
-
-    })
-    .put ((req, res) => {
-
-    })
-    .delete ((req, res) => {
-
-    })
 
 module.exports = router 
