@@ -5,20 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Circular!</title>
     <link rel = "stylesheet" href = "../public/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id = "top">
         <h2 id = "headline">CIRCULAR!</h2>
     </div>
 
-    <div>
-        <h6 id = "thoughts">Opinions</h6>
-        <form action="" method="post">
-            <label>Type Here!</label>
-            <input type = "text"/> <button type = "submit">Share</button>
-            <div> </div>
-        </form>
 
+    <div class = "pieceOfMind">
+        <h6 id = "thoughts">Opinions</h6>
+        <form class = "posture" action="https://localhost:5500/opinions/soapbox/" method="PUT">
+        <label>Type Here!</label>
+        <textarea rows="3" placeholder="Stand atop your soapboax..."></textarea> <button type = "submit">Share</button>
+    </form> 
+    </div>
+
+    <div class = "adjust">
+    <p class = "libre-barcode-39-regular" id = "voice"> <em><b>!!!EXTRA EXTRA!!!</em></b> READ, READ, <b>READ!!!</b> It's all very super serious to be/ 
+        LOOK!! It's facsinating, this fascination, a dominant <em><b>force</b></em> to be ON TOP!!          
+    </p>
+    </div>
+
+    <div class = "writings">
+        
+    </div>
+
+    <div id = "hebrew">
+        <img id = "first" src = "../public/media/hebrew.jpg" alt = "An image of the Hebrew symbol">
+        <img id = "second" src = "../public/media/christianity.jpg" alt = "An image of the Christian cross">
+        <img id = "third" src = "../public/media/crescent.jpg" alt = "An image of the representational symbol of Islam">
+        <img id = "supreme" src = "../public/media/money-eye.jpg" alt = "An image of the eye of providence?">
+    </div>
+
+    <div id = "medicine">
+    <div id = "doctor">
+        <img id = "hypno" src="../public/media/hypnoo-2.gif" alt="A pink and purple hypnotizing spinning circle">
+    </div>
+    </div>
+
+
+    <div>
         <div class = "cross">
             <video width = "565" height = "565" controls = "false" autoplay loop muted>
                 <source src="../public/media/My Movie 2.mp4" type="video/mp4">
@@ -26,15 +55,17 @@
         
 
         
-            <img id = "cross" src="../public/media/ancient_cross.png" alt="A processional cross from ca.1500">
+            <img id = "cross" src="../public/media/earth-spin.gif" alt="A processional cross from ca.1500">
         
             
 
-            <video width = "465" height = "465" controls = "false" autoplay loop muted>
+            <video width = "385" height = "425" controls = "false" autoplay loop muted>
                 <source src="../public/media/Video.mp4" type="video/mp4">
             </video>
 
         </div>
     </div>
+
+
 </body>
 </html>

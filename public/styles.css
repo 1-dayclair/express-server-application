@@ -14,8 +14,8 @@ body {
 }
 
 #cross {
-    height: 400px;
-    width: 325px;
+    height: 300px;
+    width: 275px;
 }
 
 #id {
@@ -23,4 +23,64 @@ body {
     width: 10px; 
     border: dashed olive 2px;
 }
+
+#doctor {
+    border: dashed olive 3px;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pieceOfMind {
+    width:  25%;
+    border: dashed lightseagreen 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#medicine {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+#hebrew {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#first {
+    width: 25px;
+    height: 25px;
+}
+
+#second {
+    width: 25px;
+    height: 25px;
+}
+
+#third {
+    width: 25px;
+    height: 25px;
+}
+
+#supreme {
+    width: 25px;
+    height: 25px;
+}
+
+#voice {
+    color: red;
+    white-space: nowrap;
+    word-break: break-all;
+}
+
+.libre-barcode-39-regular {
+    font-family: "Libre Barcode 39", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
 
