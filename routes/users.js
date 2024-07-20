@@ -30,9 +30,6 @@ router
     })
 router 
     .route("/:id")
-    .put((req, res) => {
-    
-    })
     .delete((req, res, next) => { 
         const user = users.find((p, i) => {
             if (p.id == req.params.id) {

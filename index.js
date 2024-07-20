@@ -35,10 +35,17 @@ app.get("/", (req, res) => {
 });
 
 // Custom Middleware
-const authentication = function(req, res, next) {
-    console.log("Authenticated!");
+const public = function(req, res, next) {
+    console.log("Welcome!");
     next();       
 };
+
+app.use(public);
+
+app.get("/public", public, (req, res) => {
+    res.send("Welcome to Circular! an application presented by In a Vaccum")
+});
+
 
 const userRouter = require("./routes/users");
 
@@ -52,12 +59,6 @@ app.use("/users", userRouter);
 
 app.use("/location", locationRouter); 
 app.use("/opinions", opinionsRouter);
-
-app.get("/public", authentication, (req, res) => {
-    res.send("Login/Sign-up or Continue with limited use")
-});
-
-app.use(authentication);
 
 // 404 Middleware
 app.use((req, res, next) => {

@@ -7,9 +7,14 @@ router
     .get ((req, res) => {
         res.json(opinions)
     });
+router
+    .route("/soapbox")
+    .post ((req, res) => {
+        res.send(request.body);
+    })
 
 router
-    .route("/soapbox/")
+    .route("/amend")
     .put ((req, res) => {
         console.log(req.body)
         return res.json({
