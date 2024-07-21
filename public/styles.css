@@ -24,12 +24,20 @@ body {
     border: dashed olive 2px;
 }
 
-#doctor {
+#hypno {
     border: dashed olive 3px;
     height: 150px;
     width: 150px;
-    display: flex;
-    justify-content: flex-end;
+}
+
+#cash {
+    height: 180px;
+    width: 180px;
+}
+
+#patient {
+    height: 150px;
+    width: 150px;
 }
 
 .pieceOfMind {
@@ -41,8 +49,27 @@ body {
 
 #medicine {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-evenly;
+}
 
+#medicine img {
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+#merica {
+    height: 50px;
+    width: 50px;
+}
+
+#usa {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#shark {
+    height: 80px;
+    width: 80px;
 }
 
 #hebrew {
