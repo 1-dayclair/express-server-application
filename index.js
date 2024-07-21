@@ -1,5 +1,11 @@
 const express = require("express");
+
+const bodyParser = require("body-parser");
+
 const app = express(); 
+
+app.use(bodyParser.urlencoded({extended: true})); 
+app.use(bodyParser.json({extended: true})); 
 
 // Had an issue with views not loading inside child folder, "server-application". Views only works when inside the root directory. 
 // but, Views did initially work when not inside the root directory. 
@@ -8,11 +14,6 @@ const app = express();
 app.set("view engine", "ejs");
 app.use("/public", express.static("./public"));
 app.use("/public/media", express.static("./public"));
-
-const bodyParser = require("body-parser");
-
-app.use(bodyParser.urlencoded({extended: true})); 
-app.use(bodyParser.json({extended: true})); 
 
 const port = 5500; 
 
@@ -62,7 +63,7 @@ app.use("/opinions", opinionsRouter);
 
 // 404 Middleware
 app.use((req, res, next) => {
-    next(error(404, "Resource Not Found"));
+    next(new error(404, "Resource Not Found"));
   });
 
 
