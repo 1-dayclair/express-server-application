@@ -8,6 +8,9 @@ router
     .get((req, res) => {
         res.json(users); 
     })
+
+router
+    .route("/brandnew")
     .post((req, res) => {
         const newUser = {
            id: users.length + 1, 
@@ -17,6 +20,7 @@ router
         };
         users.push(newUser);
         res.send(newUser);
+        console.log(`Brand new user!`);
     })
 router 
     .route("/person")

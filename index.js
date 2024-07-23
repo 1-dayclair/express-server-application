@@ -19,7 +19,8 @@ const port = 5500;
 
 const users = require("./data/users");
 const opinions = require("./data/opinions");
-const location = require("./data/location");
+const location = require("./data/location");   
+
 
 // Custom Middleware
 const status = function(req, res, next) {
