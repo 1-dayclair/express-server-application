@@ -23,8 +23,6 @@ router
 
             res.send(`New talk from: ${name} saying ${comments}`);
 
-            // res.status(200).json({message: "Success!"})
-
         }catch (error) {
             console.error("Error!!", error);
             res.status(500).json({error: "SERVER ERROR"});
@@ -34,12 +32,17 @@ router
 router
     .route("/amend")
     .put ((req, res) => {
-        console.log(req.body)
-        return res.json({
-            id: req.body.id,
-            content: req.body.content,
-            message: "Updated!"
-        });
+        try{
+            console.log(req.body)
+            return res.json({
+                id: req.body.id,
+                content: req.body.content,
+                message: "Updated!"
+            });
+        }catch (error) {
+            console.error("Error!!, error");
+            res.status(500).json({error: "SERVER ERROR"}); 
+        }
     });
 
 router

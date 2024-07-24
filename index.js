@@ -70,9 +70,8 @@ app.use((req, res, next) => {
 
 // Error Handling Middleware
 app.use((err, req, res, next) => {
-    res.status(err.status || 500);
-    res.json({ error: err.message });
-  });
+    res.status(500).send("ERROR! Something is not working properly...");
+    });
 
 app.listen(port, () => {
     console.log(`Server listening on port: ${port}.`);
