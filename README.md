@@ -11,4 +11,4 @@ Interact with a self-made API through HTML forms.
 
 The following application is an ongoing document, and it will be updated as such: 
 
-(An explanation of the application will be hosted here, momentarily)~
+This application is a rorschach and most importantly a poem and insight into the newest and quickest ideas I come across most closest to real time.  
