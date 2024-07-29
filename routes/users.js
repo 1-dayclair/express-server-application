@@ -3,11 +3,22 @@ const users = require("../data/users");
 const router = express.Router();
 
 
-router
-    .route("/")
+// router
+//     .route("/")
+//     .get((req, res) => {
+//         res.json(users); 
+//     });
+
+router 
+    .route("/person")
     .get((req, res) => {
-        res.json(users); 
-    })
+        console.log(req.query);
+        return res.json({
+            message: "This user is an actual person on Circular!", 
+            name: req.query.name,
+            age: req.query.age,    
+        });
+    });
 
 router
     .route("/brandnew")
@@ -21,17 +32,17 @@ router
         users.push(newUser);
         res.send(newUser);
         console.log(`Brand new user!`);
-    })
-router 
-    .route("/person")
-    .get((req, res) => {
-        console.log(req.query);
-        return res.json({
-            message: "This user is an actual person on Circular!", 
-            name: req.query.name,
-            age: req.query.age,    
-        })
-    })
+    });
+// router 
+//     .route("/person")
+//     .get((req, res) => {
+//         console.log(req.query);
+//         return res.json({
+//             message: "This user is an actual person on Circular!", 
+//             name: req.query.name,
+//             age: req.query.age,    
+//         });
+//     });
 router 
     .route("/:id")
     .delete((req, res, next) => { 
@@ -40,11 +51,16 @@ router
                 users.splice(i, 1);
                 return true;
             }
-        })
+        });
         if (user) { res.json({ message: "User has been deleted successfully!", user});
         } else { next();
         }
     });
 
+router
+    .route("/")
+    .get((req, res) => {
+        res.json(users); 
+    });
 
 module.exports = router 
