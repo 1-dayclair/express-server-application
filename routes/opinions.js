@@ -19,6 +19,8 @@ router
     .post ((req, res) => {
         try{
             const {name, comments} = req.body;
+            const body = {name, comments};
+            
             console.log("Comment written", name, body);
 
             res.send(`New talk from: ${name} saying ${comments}`);
