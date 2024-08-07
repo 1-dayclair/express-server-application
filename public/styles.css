@@ -8,6 +8,10 @@ body {
     border: 4mm ridge rgba(211, 220, 50, .6);
 }
 
+#reasoning {
+    color: darkkhaki;
+}
+
 .cross {
     display: flex;
     justify-content: center;
@@ -121,5 +125,83 @@ body {
     font-style: normal;
   }
 
+.fortresses {
+    position: relative;
+    display: inline-block;
+} 
+
+.silver {
+    width: 125px;
+    height: 250px;
+    position: relative;
+
+
+}
+
+.khaki {
+    width: 150px;
+    height: 170px;
+    position: relative;
+    bottom: -32px;
+    left: -33px;
+}
+
+.will {
+    width: 372px;
+    height: 85px;
+    position: relative;
+
+}
+
+.will2 {
+    width: 302px;
+    height: 85px;
+    position: relative;
+    left: -100px;
+
+}
+
+.will3 {
+    width: 302px;
+    height: 85px;
+    position: relative;
+    left: 1000px;
+}
+
+.will4 {
+    width: 302px;
+    height: 85px;
+    position: relative;
+    bottom: 100px;
+
+}
+
+.will5 {
+    width: 302px;
+    height: 85px;
+    position: relative;
+    bottom: 385px;
+
+}
+
+.pov {
+    position: relative;
+    bottom: 111px;
+    left: -222px;
+}
+
+.pov2 {
+    position: relative;
+    left: -725px;
+}
+
+.pov3 {
+    position: relative;
+}
+
+.will {
+    position: relative;
+    bottom: 140px;
+}
 
 

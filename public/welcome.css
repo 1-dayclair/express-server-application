@@ -1,0 +1,19 @@
+body {
+    color: maroon;
+    background-color: lightblue;
+}
+
+#click {
+    color: bisque;
+    background-color: olive;
+}
+
+#music {
+    height: 75px;
+    width: 95px;
+}
+
+#head {
+    height: 35px;
+    width: 40px;
+}

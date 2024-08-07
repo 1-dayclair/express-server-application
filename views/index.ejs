@@ -12,21 +12,51 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39&display=swap" rel="stylesheet">
 
-    <!-- <script defer src = "../server-application/form.js" ></script> -->
 
 </head>
 
 <body>
     <div id = "top">
         <h2 id = "headline">CIRCULAR!</h2>
+        <h6 id = "reasoning">Rorschach</h6>
     </div>
+
+    <div>
+        <div class = "pieceOfMind">
+        
+            <h6 id = "thoughts">Opinions</h6>
+            
+            <form action = "opinions/soapbox" method = "post">
+                <input type = "text" name = "name" placeholder = "Name">
+                <input type = "text" name = "comments" placeholder = "What do you see?"></input> <button type = "submit">Share</button>
+            </form>
+    
+        </div>
+    </div>
+
+    <div class="fortresses">
+        <img class="silver" src="../public/media/fortress.png" alt="An image of an silver fortess.">
+        <img class="khaki" src="../public/media/fortress-2.png" alt="An image of a sculpture of a fortress">
+        <img class="pov" src="../public/media/fortress-3.png" alt="The word, 'fortress', written in graffiti">
+        <img class="pov2" src="../public/media/fortress-4.png" alt="The word, 'fortress', written in graffiti">
+        <img class="pov3" src="../public/media/fortress-6.png" alt="The word, 'fortress', written in graffiti">
+        
+        <img class="will" src="../public/media/will-graffiti.png" alt="The word, 'will', written in graffiti">
+        <img class="will2" src="../public/media/will-graffiti.png" alt="The word, 'will', written in graffiti">
+        <img class="will3" src="../public/media/will-graffiti.png" alt="The word, 'will', written in graffiti">
+        <img class="will4" src="../public/media/will-graffiti.png" alt="The word, 'will', written in graffiti">
+        <img class="will5" src="../public/media/will-graffiti.png" alt="The word, 'will', written in graffiti">
+    </div>
+
+
+    <br>
 
 
     <div class = "pieceOfMind">
         
         <h6 id = "thoughts">Opinions</h6>
         
-        <form action = "/soapbox" method = "post">
+        <form action = "opinions/soapbox" method = "post">
             <input type = "text" name = "name" placeholder = "Name">
             <input type = "text" name = "comments" placeholder = "Stand atop your soapboax..."></input> <button type = "submit">Share</button>
         </form>
