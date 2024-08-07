@@ -12,4 +12,9 @@ Interact with a self-made API through HTML forms.
 
 The following application is an ongoing document, and it will be updated as such: 
 
-This application is a rorschach and most importantly a poem and insight into the newest and quickest ideas I come across most closest to real time.  
+This application is a rorschach Circular! Users can add how they feel about the collective of images on the screen and submit their comments where they will be posted. 
+
+The traditional meaning of a rorschach test: a type of projective test used in psychoanalysis, in which a standard set of symmetrical ink blots of different shapes and colors is presented one by one to the subject, who is asked to describe what they suggest or resemble. 
+
+The definition of a circular is: a letter or advertisement that is distributed to a large number of people:
+"I received a circular from a building society"
