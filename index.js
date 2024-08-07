@@ -51,18 +51,6 @@ app.use("/public/media", express.static("./public"));
 app.use(express.static("public"))
 // Views^^
 
-// // Data
-
-// I'm not quite sure if this code is necessary, 
-// as a matter of fact, I don't think it is necessary because the code still runs 
-// without error. 
-
-// const users = require("./data/users");
-// const opinions = require("./data/opinions");
-// const location = require("./data/location");   
-// // Data^^
-
-
 // Welcome Page
 app.get("/welcome", (req, res) => {
     res.render("welcome.ejs", { text: "Welcome to Circular! an application presented by (In a Vaccum!)"});
