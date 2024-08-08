@@ -130,22 +130,6 @@ body {
     display: inline-block;
 } 
 
-.silver {
-    width: 125px;
-    height: 250px;
-    position: relative;
-
-
-}
-
-.khaki {
-    width: 150px;
-    height: 170px;
-    position: relative;
-    bottom: -32px;
-    left: -33px;
-}
-
 .will {
     width: 372px;
     height: 85px;
@@ -180,19 +164,21 @@ body {
     width: 302px;
     height: 85px;
     position: relative;
-    bottom: 385px;
+    bottom: 300px;
 
 }
 
 .pov {
     position: relative;
     bottom: 111px;
-    left: -222px;
+    left: 110px;
+    top: 20px;
 }
 
 .pov2 {
     position: relative;
-    left: -725px;
+    left: -200px;
+    top: 200px;
 }
 
 .pov3 {
