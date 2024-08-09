@@ -18,5 +18,3 @@ The traditional meaning of a rorschach test: a type of projective test used in p
 
 The definition of a circular is: a letter or advertisement that is distributed to a large number of people:
 "I received a circular from a building society"
-
-*** Home page @ localhost:5500/welcome ***
