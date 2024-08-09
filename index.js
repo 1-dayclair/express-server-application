@@ -52,7 +52,7 @@ app.use(express.static("public"))
 // Views^^
 
 // Welcome Page
-app.get("/welcome", (req, res) => {
+app.get("/", (req, res) => {
     res.render("welcome.ejs", { text: "Welcome to Circular! an application presented by (In a Vaccum!)"});
     console.log("Welcome to Circular! an application presented by (In a Vaccum!)");
 });
